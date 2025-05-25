@@ -42,11 +42,18 @@
         <!-- Zamijenjeni centar sa 3D modelom -->
       
  
-  <a-assets>
+<!--   <a-assets>
     <a-asset-item id="model" src="https://raw.githubusercontent.com/saracen7mi/standing/main/Standing_Greeting_Optimized.glb"></a-asset-item>
   </a-assets>
+        <a-entity gltf-model="#model" position="0 0 -3"></a-entity>    -->
 
-        <a-entity gltf-model="#model" position="0 0 -3"></a-entity>        
+<a-assets timeout="30000">
+    <a-asset-item id="model" src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF-Binary/Duck.glb"></a-asset-item>
+</a-assets>
+<a-entity gltf-model="#model" position="0 0 -3" scale="0.5 0.5 0.5"></a-entity>
+
+
+        
         <!--   <a-entity id="animatedModel" gltf-model="#model" position="0 -0.1 -4" scale="1 1 1" rotation="0 0 0" custom-animation></a-entity>
  -->
         
